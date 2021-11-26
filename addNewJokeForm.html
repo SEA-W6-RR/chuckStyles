@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>NewJokeForm</title>>
+    <link rel="stylesheet" href="css/NewJokeFormStyle.css">
+</head>
+
+<body>
+  <div id="form">
+<form method="post" th:action="@{/addNewJoke}">
+    <label for="jokeText">Add your joke</label><br><br>
+    <input type="text" id="jokeText" name="jokeText" placeholder="Add your joke here ..."><br><br>
+    <input type="submit" value="Submit">
+</form>
+<a href="/alljokes">Return to the list</a>
+</div>
+</body>
+</html>
